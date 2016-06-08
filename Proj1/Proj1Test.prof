@@ -1,0 +1,261 @@
+	Sun Sep  6 19:30 2015 Time and Allocation Profiling Report  (Final)
+
+	   Proj1Test +RTS -pa -RTS A2 B1 D3
+
+	total time  =       33.43 secs   (33434 ticks @ 1000 us, 1 processor)
+	total alloc = 36,224,609,312 bytes  (excludes profiling overheads)
+
+COST CENTRE              MODULE                  %time %alloc  ticks     bytes
+
+elemCheckDelete          Responder                24.1   13.8   8074 5004138960
+countDivide              Responder                20.1   32.6   6727 11810850528
+reduceOnElem             Responder                11.2   15.7   3748 5705182176
+countDivide.(...)        Responder                 6.8    5.1   2269 1864871136
+reduceOnElem.eqNth       Responder                 6.4    0.0   2138         0
+chordResponse            Responder                 5.8   17.2   1946 6216237120
+countDivide.(...)        Responder                 4.7   11.7   1585 4239814848
+numEliminated.eliminated Proj1                     3.6    0.1   1206  24326016
+chordResponse.(...)      Responder                 2.4    2.3    798 828831616
+countDivide.n'           Responder                 2.2    0.0    727         0
+countDivide.lefts'       Responder                 1.8    0.0    599         0
+numEliminated            Proj1                     1.4    0.0    456  17691648
+chordResponse.numNotes   Responder                 1.3    0.5    446 194671632
+countDivide.rights'      Responder                 1.2    0.0    387         0
+isCandidate              Proj1                     1.1    0.0    379         0
+SYSTEM                   SYSTEM                    1.0    0.0    326     34736
+GC                       GC                        0.9    0.0    316         0
+countDivide.found        Responder                 0.8    0.0    264         0
+OVERHEAD_of              PROFILING                 0.7    0.0    248         0
+chordResponse.numOctaves Responder                 0.7    0.3    246  98397616
+chordResponse.lenGuess   Responder                 0.7    0.5    220 194671632
+chordResponse.numRight   Responder                 0.6    0.0    186         0
+chordResponse.guess'     Responder                 0.2    0.0     61         0
+chordResponse.ans'       Responder                 0.1    0.0     46         0
+guessScore               Proj1                     0.1    0.1     35  24581184
+CAF                      GHC.IO.Handle.FD          0.0    0.0      1     34512
+IDLE                     IDLE                      0.0    0.0      0         0
+PINNED                   SYSTEM                    0.0    0.0      0         0
+DONT_CARE                MAIN                      0.0    0.0      0         0
+MAIN                     MAIN                      0.0    0.0      0       744
+CAF                      GHC.Integer.Type          0.0    0.0      0         0
+CAF                      GHC.Event.TimerManager    0.0    0.0      0         0
+CAF                      GHC.Event.Thread          0.0    0.0      0         0
+CAF                      GHC.Event.Poll            0.0    0.0      0         0
+CAF                      GHC.Event.PSQ             0.0    0.0      0         0
+CAF                      GHC.Event.Manager         0.0    0.0      0         0
+CAF                      GHC.Event.KQueue          0.0    0.0      0         0
+CAF                      GHC.Event.Internal        0.0    0.0      0         0
+CAF                      GHC.Event.Control         0.0    0.0      0         0
+CAF                      GHC.Event.Array           0.0    0.0      0         0
+CAF                      System.Posix.Internals    0.0    0.0      0         0
+CAF                      System.Exit               0.0    0.0      0         0
+CAF                      GHC.TopHandler            0.0    0.0      0         0
+CAF                      GHC.Show                  0.0    0.0      0         0
+CAF                      GHC.List                  0.0    0.0      0         0
+CAF                      GHC.IO.Handle.Types       0.0    0.0      0         0
+CAF                      GHC.IO.Handle.Text        0.0    0.0      0        88
+CAF                      GHC.IO.Handle.Internals   0.0    0.0      0         0
+CAF                      GHC.IO.Handle             0.0    0.0      0         0
+CAF                      GHC.IO.FD                 0.0    0.0      0         0
+CAF                      GHC.IO.Exception          0.0    0.0      0         0
+CAF                      GHC.IO.Encoding.UTF8      0.0    0.0      0         0
+CAF                      GHC.IO.Encoding.UTF32     0.0    0.0      0         0
+CAF                      GHC.IO.Encoding.UTF16     0.0    0.0      0         0
+CAF                      GHC.IO.Encoding.Latin1    0.0    0.0      0         0
+CAF                      GHC.IO.Encoding.Iconv     0.0    0.0      0       232
+CAF                      GHC.IO.Encoding.Failure   0.0    0.0      0         0
+CAF                      GHC.IO.Encoding           0.0    0.0      0      3280
+CAF                      GHC.ForeignPtr            0.0    0.0      0         0
+CAF                      GHC.Exception             0.0    0.0      0         0
+CAF                      GHC.Err                   0.0    0.0      0         0
+CAF                      GHC.Enum                  0.0    0.0      0         0
+CAF                      GHC.Conc.Sync             0.0    0.0      0         0
+CAF                      GHC.Conc.Signal           0.0    0.0      0       656
+CAF                      GHC.Arr                   0.0    0.0      0         0
+CAF                      Foreign.Marshal.Alloc     0.0    0.0      0         0
+CAF                      Control.Exception.Base    0.0    0.0      0         0
+initState                Responder                 0.0    0.0      0         0
+initState.pitches        Responder                 0.0    0.0      0         0
+CAF                      Responder                 0.0    0.0      0         0
+nextGuess                Proj1                     0.0    0.0      0       416
+nextGuess.newGuess       Proj1                     0.0    0.0      0         0
+nextGuess.nextState      Proj1                     0.0    0.0      0      6152
+initialGuess             Proj1                     0.0    0.0      0       480
+initState                Proj1                     0.0    0.0      0    195136
+initState.pitches        Proj1                     0.0    0.0      0      3272
+pickBestGuess            Proj1                     0.0    0.0      0         0
+compareMap               Proj1                     0.0    0.0      0         0
+CAF                      Proj1                     0.0    0.0      0        24
+main                     Main                      0.0    0.0      0      2880
+main.other               Main                      0.0    0.0      0        16
+main.guess               Main                      0.0    0.0      0        16
+main.(...)               Main                      0.0    0.0      0         0
+main.target              Main                      0.0    0.0      0         0
+loop                     Main                      0.0    0.0      0     50384
+loop.other'              Main                      0.0    0.0      0         0
+loop.guess'              Main                      0.0    0.0      0         0
+loop.(...)               Main                      0.0    0.0      0        96
+loop.answer              Main                      0.0    0.0      0       160
+response                 Main                      0.0    0.0      0      1040
+response.rightOctave     Main                      0.0    0.0      0      1104
+response.rightNote       Main                      0.0    0.0      0      1168
+response.num             Main                      0.0    0.0      0        80
+response.right           Main                      0.0    0.0      0      1552
+response.guess'          Main                      0.0    0.0      0      1520
+eqNth                    Main                      0.0    0.0      0         0
+validChord               Main                      0.0    0.0      0      1824
+validPitch               Main                      0.0    0.0      0      1616
+CAF                      Main                      0.0    0.0      0        16
+
+
+                                                                                  individual     inherited
+COST CENTRE                           MODULE                    no.     entries  %time %alloc   %time %alloc  ticks     bytes
+
+MAIN                                  MAIN                       48           0    0.0    0.0   100.0  100.0      0       744
+ main                                 Main                       97           0    0.0    0.0    97.3  100.0      0      2864
+  main.other                          Main                      124           1    0.0    0.0     0.0    0.0      0         0
+  main.guess                          Main                      103           1    0.0    0.0     0.0    0.0      0         0
+  loop                                Main                      102           5    0.0    0.0    97.3  100.0      0     49720
+   loop.other'                        Main                      194           3    0.0    0.0     0.0    0.0      0         0
+   loop.(...)                         Main                      119           4    0.0    0.0    97.3  100.0      0        96
+    nextGuess                         Proj1                     120           4    0.0    0.0    97.3  100.0      0       416
+     nextGuess.nextState              Proj1                     123           4    0.0    0.0     0.0    0.0      0      6152
+      isCandidate                     Proj1                     128        1436    0.0    0.0     0.0    0.0      0         0
+       chordResponse                  Responder                 129        1436    0.0    0.0     0.0    0.0      0    344640
+        chordResponse.numOctaves      Responder                 146         191    0.0    0.0     0.0    0.0      0      3056
+         reduceOnElem                 Responder                 147         191    0.0    0.0     0.0    0.0      0     35480
+          reduceOnElem.eqNth          Responder                 148         584    0.0    0.0     0.0    0.0      0         0
+        chordResponse.ans'            Responder                 144         499    0.0    0.0     0.0    0.0      0         0
+        chordResponse.guess'          Responder                 141         499    0.0    0.0     0.0    0.0      0         0
+        chordResponse.lenGuess        Responder                 140         499    0.0    0.0     0.0    0.0      0      7984
+        chordResponse.numNotes        Responder                 139         499    0.0    0.0     0.0    0.0      0      7984
+         reduceOnElem                 Responder                 143         499    0.0    0.0     0.0    0.0      0    124280
+          reduceOnElem.eqNth          Responder                 145        1850    0.0    0.0     0.0    0.0      0         0
+        chordResponse.(...)           Responder                 131        1436    0.0    0.0     0.0    0.0      0     45952
+         countDivide                  Responder                 132        5744    0.0    0.0     0.0    0.0      1    654816
+          countDivide.rights'         Responder                 142        1497    0.0    0.0     0.0    0.0      0         0
+          countDivide.(...)           Responder                 138        4308    0.0    0.0     0.0    0.0      0    238128
+          countDivide.lefts'          Responder                 137        3371    0.0    0.0     0.0    0.0      0         0
+          countDivide.(...)           Responder                 135        4308    0.0    0.0     0.0    0.0      0    103392
+           elemCheckDelete            Responder                 136       16943    0.0    0.0     0.0    0.0      2    287808
+          countDivide.found           Responder                 134        4308    0.0    0.0     0.0    0.0      1         0
+          countDivide.n'              Responder                 133        4308    0.0    0.0     0.0    0.0      0         0
+        chordResponse.numRight        Responder                 130        1436    0.0    0.0     0.0    0.0      0         0
+     nextGuess.newGuess               Proj1                     121           4    0.0    0.0    97.3  100.0      0         0
+      pickBestGuess                   Proj1                     122           4    0.0    0.0    97.3  100.0      0         0
+       compareMap                     Proj1                     149        2658    0.0    0.0    97.3  100.0      0         0
+        guessScore                    Proj1                     150        5316    0.1    0.1    97.3  100.0     35  24581184
+         numEliminated                Proj1                     151      276432    1.4    0.0    97.2   99.9    456  17691648
+          numEliminated.eliminated    Proj1                     152      276432    3.6    0.1    95.9   99.9   1206  24326016
+           isCandidate                Proj1                     163    25623120    1.1    0.0    90.9   98.5    379         0
+            chordResponse             Responder                 164    25623120    5.7   17.0    89.8   98.5   1905 6149548800
+             chordResponse.numOctaves Responder                 188     5873228    0.7    0.3     5.6    3.8    228  93971648
+              reduceOnElem            Responder                 189     5873228    2.9    3.6     4.9    3.6    986 1293206752
+               reduceOnElem.eqNth     Responder                 190    25233919    2.0    0.0     2.0    0.0    658         0
+             chordResponse.ans'       Responder                 179    11890046    0.1    0.0     0.1    0.0     46         0
+             chordResponse.guess'     Responder                 176    11890046    0.2    0.0     0.2    0.0     60         0
+             chordResponse.lenGuess   Responder                 175    11890046    0.6    0.5     0.6    0.5    217 190240736
+             chordResponse.numNotes   Responder                 174    11890046    1.3    0.5    13.6   12.3    434 190240736
+              reduceOnElem            Responder                 178    11890046    8.0   11.8    12.3   11.8   2678 4260809968
+               reduceOnElem.eqNth     Responder                 180    69430249    4.2    0.0     4.2    0.0   1419         0
+             chordResponse.(...)      Responder                 166    25623120    2.4    2.3    63.4   64.9    790 819939840
+              countDivide             Responder                 167   102492480   19.9   32.3    61.0   62.6   6649 11684142720
+               countDivide.rights'    Responder                 177    35670138    1.1    0.0     1.1    0.0    377         0
+               countDivide.(...)      Responder                 173    76869360    4.7   11.6     4.7   11.6   1568 4193836640
+               countDivide.lefts'     Responder                 172    63136286    1.8    0.0     1.8    0.0    595         0
+               countDivide.(...)      Responder                 170    76869360    6.7    5.1    30.6   18.8   2250 1844864640
+                elemCheckDelete       Responder                 171   297167026   23.9   13.7    23.9   13.7   7996 4950163104
+               countDivide.found      Responder                 169    76869360    0.8    0.0     0.8    0.0    260         0
+               countDivide.n'         Responder                 168    76869360    2.1    0.0     2.1    0.0    716         0
+             chordResponse.numRight   Responder                 165    25623120    0.6    0.0     0.6    0.0    185         0
+           chordResponse              Responder                 153      276432    0.1    0.2     1.3    1.3     41  66343680
+            chordResponse.numOctaves  Responder                 191      276432    0.1    0.0     0.3    0.2     18   4422912
+             reduceOnElem             Responder                 192      276432    0.1    0.2     0.2    0.2     36  60575104
+              reduceOnElem.eqNth      Responder                 193     1148439    0.1    0.0     0.1    0.0     34         0
+            chordResponse.ans'        Responder                 186      276432    0.0    0.0     0.0    0.0      0         0
+            chordResponse.guess'      Responder                 183      276432    0.0    0.0     0.0    0.0      1         0
+            chordResponse.lenGuess    Responder                 182      276432    0.0    0.0     0.0    0.0      3   4422912
+            chordResponse.numNotes    Responder                 181      276432    0.0    0.0     0.3    0.3     12   4422912
+             reduceOnElem             Responder                 185      276432    0.1    0.2     0.2    0.2     48  90430592
+              reduceOnElem.eqNth      Responder                 187     1461184    0.1    0.0     0.1    0.0     27         0
+            chordResponse.(...)       Responder                 155      276432    0.0    0.0     0.7    0.7      8   8845824
+             countDivide              Responder                 156     1105728    0.2    0.3     0.6    0.7     77 126052992
+              countDivide.rights'     Responder                 184      829296    0.0    0.0     0.0    0.0     10         0
+              countDivide.(...)       Responder                 162      829296    0.1    0.1     0.1    0.1     17  45740080
+              countDivide.lefts'      Responder                 161      829296    0.0    0.0     0.0    0.0      4         0
+              countDivide.(...)       Responder                 159      829296    0.1    0.1     0.3    0.2     19  19903104
+               elemCheckDelete        Responder                 160     3217073    0.2    0.1     0.2    0.1     76  53688048
+              countDivide.found       Responder                 158      829296    0.0    0.0     0.0    0.0      3         0
+              countDivide.n'          Responder                 157      829296    0.0    0.0     0.0    0.0     11         0
+            chordResponse.numRight    Responder                 154      276432    0.0    0.0     0.0    0.0      1         0
+   loop.guess'                        Main                      118           4    0.0    0.0     0.0    0.0      0         0
+   loop.answer                        Main                      109           5    0.0    0.0     0.0    0.0      0       160
+    response                          Main                      110           5    0.0    0.0     0.0    0.0      0      1040
+     response.rightOctave             Main                      116           5    0.0    0.0     0.0    0.0      0      1104
+      eqNth                           Main                      117          28    0.0    0.0     0.0    0.0      0         0
+     response.num                     Main                      114           5    0.0    0.0     0.0    0.0      0        80
+     response.rightNote               Main                      113           5    0.0    0.0     0.0    0.0      0      1168
+      eqNth                           Main                      115          27    0.0    0.0     0.0    0.0      0         0
+     response.guess'                  Main                      112           5    0.0    0.0     0.0    0.0      0      1520
+     response.right                   Main                      111           5    0.0    0.0     0.0    0.0      0      1552
+   validChord                         Main                      107           5    0.0    0.0     0.0    0.0      0      1520
+    validPitch                        Main                      108          15    0.0    0.0     0.0    0.0      0       720
+  validChord                          Main                       99           1    0.0    0.0     0.0    0.0      0       304
+   validPitch                         Main                      100           3    0.0    0.0     0.0    0.0      0       176
+  main.target                         Main                       98           1    0.0    0.0     0.0    0.0      0         0
+ CAF                                  Main                       95           0    0.0    0.0     0.0    0.0      0        16
+  loop                                Main                      195           0    0.0    0.0     0.0    0.0      0       664
+  validPitch                          Main                      101           0    0.0    0.0     0.0    0.0      0       720
+  main                                Main                       96           1    0.0    0.0     0.0    0.0      0        16
+   main.other                         Main                      125           0    0.0    0.0     0.0    0.0      0        16
+   main.(...)                         Main                      105           1    0.0    0.0     0.0    0.0      0         0
+   main.guess                         Main                      104           0    0.0    0.0     0.0    0.0      0        16
+ CAF                                  Proj1                      94           0    0.0    0.0     0.0    0.0      0        24
+  initState                           Proj1                     126           1    0.0    0.0     0.0    0.0      0    195136
+   initState.pitches                  Proj1                     127           1    0.0    0.0     0.0    0.0      0      3272
+  initialGuess                        Proj1                     106           1    0.0    0.0     0.0    0.0      0       480
+ CAF                                  Responder                  93           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  Control.Exception.Base     92           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  Foreign.Marshal.Alloc      91           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.Arr                    90           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.Conc.Signal            89           0    0.0    0.0     0.0    0.0      0       656
+ CAF                                  GHC.Conc.Sync              88           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.Enum                   87           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.Err                    86           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.Exception              85           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.ForeignPtr             84           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.IO.Encoding            83           0    0.0    0.0     0.0    0.0      0      3280
+ CAF                                  GHC.IO.Encoding.Failure    82           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.IO.Encoding.Iconv      81           0    0.0    0.0     0.0    0.0      0       232
+ CAF                                  GHC.IO.Encoding.Latin1     80           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.IO.Encoding.UTF16      79           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.IO.Encoding.UTF32      78           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.IO.Encoding.UTF8       77           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.IO.Exception           76           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.IO.FD                  75           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.IO.Handle              74           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.IO.Handle.FD           73           0    0.0    0.0     0.0    0.0      1     34512
+ CAF                                  GHC.IO.Handle.Internals    72           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.IO.Handle.Text         71           0    0.0    0.0     0.0    0.0      0        88
+ CAF                                  GHC.IO.Handle.Types        70           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.List                   69           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.Show                   68           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.TopHandler             67           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  System.Exit                66           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  System.Posix.Internals     65           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.Event.Array            64           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.Event.Control          63           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.Event.Internal         62           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.Event.KQueue           61           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.Event.Manager          60           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.Event.PSQ              59           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.Event.Poll             58           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.Event.Thread           57           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.Event.TimerManager     56           0    0.0    0.0     0.0    0.0      0         0
+ CAF                                  GHC.Integer.Type           55           0    0.0    0.0     0.0    0.0      0         0
+ SYSTEM                               SYSTEM                     54           0    1.0    0.0     1.0    0.0    326     34736
+ GC                                   GC                         53           0    0.9    0.0     0.9    0.0    316         0
+ OVERHEAD_of                          PROFILING                  52           0    0.7    0.0     0.7    0.0    248         0
+ DONT_CARE                            MAIN                       51           0    0.0    0.0     0.0    0.0      0         0
+ PINNED                               SYSTEM                     50           0    0.0    0.0     0.0    0.0      0         0
+ IDLE                                 IDLE                       49           0    0.0    0.0     0.0    0.0      0         0
